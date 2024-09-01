@@ -1,4 +1,28 @@
-/* General styles */
+/* Basic body styling */
+html, body {
+  height: 100%; /* Full height for HTML and body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Font family */
+  line-height: 1.6; /* Line height for readability */
+  color: #f0f4f8; /* Light color for readability on dark background */
+  background: url('./space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
+  background-size: cover; /* Cover the whole background */
+}
+
+/* Container styling */
+.container {
+  width: 80%; /* Container width */
+  height: min-content; /* Container height based on content */
+  margin: auto; /* Center container horizontally */
+  overflow: hidden; /* Hide overflowing content */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
+  border-radius: 10px; /* Rounded corners */
+  padding: 1rem; /* Padding inside the container */
+}
 
 /* Profile image styling */
 #profile-img {
@@ -26,31 +50,9 @@
   color: #ddd; /* Light gray text color */
 }
 
-/* Basic body styling */
-body {
-  font-family: 'Arial', sans-serif; /* Font family */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  line-height: 1.6; /* Line height for readability */
-  color: #f0f4f8; /* Light color for readability on dark background */
-  background: url('./My-portfolio-font.jpg') no-repeat center center fixed; /* Space-themed background image */
-  background-size: cover; /* Cover the whole background */
-}
-
-/* Container styling */
-.container {
-  width: 80%; /* Container width */
-  height: min-content; /* Container height based on content */
-  margin: auto; /* Center container horizontally */
-  overflow: hidden; /* Hide overflowing content */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
-  border-radius: 10px; /* Rounded corners */
-  padding: 1rem; /* Padding inside the container */
-}
-
 /* Header styling */
 header {
-  background: rgba(0, 0, 0, 0.7) url('./My-portfolio-font.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./space-background.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
@@ -102,18 +104,6 @@ section h2 {
   animation: slideIn 1s ease-out; /* Slide-in effect */
 }
 
-/* Profile image class (duplicate of #profile-img) */
-.profile-img {
-  border-radius: 50%; /* Circular profile image */
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
-  display: block; /* Center the image horizontally */
-  margin: 1rem auto; /* Center the image with margin */
-  opacity: 0; /* Initially hidden for animation */
-  animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
-}
-
 /* Portfolio item styling */
 .portfolio-item {
   margin-bottom: 2rem; /* Margin at the bottom of portfolio items */
@@ -151,7 +141,7 @@ section h2 {
 
 /* Footer styling */
 footer {
-  background: rgba(0, 0, 0, 0.7) url('./My-protfolio-font.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./space-footer.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
   color: #fff; /* White text color */
   text-align: center; /* Center text alignment */
@@ -210,4 +200,3 @@ footer a:hover {
     opacity: 1; /* End with fully visible */
   }
 }
-
