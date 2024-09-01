@@ -136,9 +136,9 @@ section h2 {
 
 /* Footer styling */
 footer {
-    background-image: url('./My-portfolio-front.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url('./My-portfolio-front.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   
   color: #fff; /* White text color */
   text-align: center; /* Center text alignment */
