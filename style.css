@@ -50,7 +50,7 @@ body {
 
 /* Header styling */
 header {
-  background: rgba(0, 0, 0, 0.7) url('./space-header.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./My-portfolio-font.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
