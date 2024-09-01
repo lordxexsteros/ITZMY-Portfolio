@@ -43,7 +43,8 @@ body {
 
 /* Header styling */
 header {
-  background: #013870; /* Dark blue background */
+  background-image(url="..My-portfolio-font.jpg")
+  
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
   text-align: center; /* Center text alignment */
