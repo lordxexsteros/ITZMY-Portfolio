@@ -33,7 +33,7 @@ body {
   padding: 0; /* Remove default padding */
   line-height: 1.6; /* Line height for readability */
   color: #f0f4f8; /* Light color for readability on dark background */
-  background: url('./space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
+  background: url('./My-portfolio-font.jpg') no-repeat center center fixed; /* Space-themed background image */
   background-size: cover; /* Cover the whole background */
 }
 
