@@ -9,28 +9,32 @@
   margin: 1rem auto; /* Center the image with margin */
   opacity: 0; /* Initially hidden for animation */
   animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
 }
 
 /* Styling for the about me section */
 #about-me {
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
   text-align: center; /* Center text alignment */
+  color: #fff; /* White text color */
 }
 
 /* Styling for the skills section */
 #skills {
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-  text-align: align; /* Note: `align` is not a valid value; it should be `left`, `center`, or `right` */
+  text-align: left; /* Fixed alignment value */
+  color: #ddd; /* Light gray text color */
 }
 
 /* Basic body styling */
 body {
-  font-family: Arial, sans-serif; /* Font family */
+  font-family: 'Arial', sans-serif; /* Font family */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   line-height: 1.6; /* Line height for readability */
-  color: #333; /* Text color */
-  background-color: #f0f4f8; /* Light blue-gray background */
+  color: #f0f4f8; /* Light color for readability on dark background */
+  background: url('./space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
+  background-size: cover; /* Cover the whole background */
 }
 
 /* Container styling */
@@ -39,11 +43,15 @@ body {
   height: min-content; /* Container height based on content */
   margin: auto; /* Center container horizontally */
   overflow: hidden; /* Hide overflowing content */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
+  border-radius: 10px; /* Rounded corners */
+  padding: 1rem; /* Padding inside the container */
 }
 
 /* Header styling */
 header {
-  background-image: url('./My-portfolio-front.jpg');
+  background: rgba(0, 0, 0, 0.7) url('./space-header.jpg') no-repeat center center; /* Space-themed background image */
+  background-size: cover;
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
   text-align: center; /* Center text alignment */
@@ -52,40 +60,45 @@ header {
 
 header h1 {
   margin: 0; /* Remove default margin */
-  font-size: 2.5rem; /* Font size for the main heading */
+  font-size: 3rem; /* Larger font size for the main heading */
   animation: slideIn 1s ease-out; /* Slide-in effect */
 }
 
 header p {
-  font-size: 1.2rem; /* Font size for paragraph */
+  font-size: 1.5rem; /* Larger font size for paragraph */
   animation: slideIn 1.5s ease-out; /* Slide-in effect with delay */
 }
 
 /* Button styling */
 .btn {
-  background: #0066cc; /* Bright blue background */
+  background: #4a90e2; /* Space-themed blue background */
   color: #fff; /* White text color */
   padding: 10px 20px; /* Padding inside the button */
   text-decoration: none; /* Remove underline from links */
   border-radius: 5px; /* Rounded corners */
   transition: background 0.3s ease; /* Smooth background transition on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
 }
 
 .btn:hover {
-  background: #004080; /* Darker blue background on hover */
+  background: #003d80; /* Darker blue background on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
 }
 
 /* Section styling */
 section {
   padding: 2rem 0; /* Padding for top and bottom */
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  border-radius: 10px; /* Rounded corners */
 }
 
+/* Heading styling */
 section h2 {
   margin-top: 50px; /* Margin at the top of headings */
   margin-bottom: 1rem; /* Margin at the bottom of headings */
   text-align: center; /* Center text alignment */
-  color: #003366; /* Dark blue color for headings */
+  color: #e0e0e0; /* Light gray color for headings */
   animation: slideIn 1s ease-out; /* Slide-in effect */
 }
 
@@ -98,21 +111,23 @@ section h2 {
   margin: 1rem auto; /* Center the image with margin */
   opacity: 0; /* Initially hidden for animation */
   animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
 }
 
 /* Portfolio item styling */
 .portfolio-item {
   margin-bottom: 2rem; /* Margin at the bottom of portfolio items */
-  border: 1px solid #ddd; /* Light gray border */
+  border: 1px solid #333; /* Dark border */
   border-radius: 10px; /* Rounded corners */
   overflow: hidden; /* Hide overflowing content */
-  margin: 80px; /* Margin around portfolio items */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow transitions */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  color: #f0f4f8; /* Light text color */
 }
 
 .portfolio-item:hover {
   transform: scale(1.05); /* Slightly enlarge the item on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Add glowing shadow on hover */
 }
 
 .portfolio-item img {
@@ -126,7 +141,7 @@ section h2 {
 .portfolio-item h3 {
   margin: 0.5rem 0; /* Margin around the title */
   text-align: center; /* Center text alignment */
-  color: #0066cc; /* Bright blue color for titles */
+  color: #4a90e2; /* Space-themed blue color for titles */
 }
 
 .portfolio-item p {
@@ -136,10 +151,8 @@ section h2 {
 
 /* Footer styling */
 footer {
-  background-image: url('./My-portfolio-front.jpg');
+  background: rgba(0, 0, 0, 0.7) url('./My-protfolio-font.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
-  background-repeat: no-repeat;
-  
   color: #fff; /* White text color */
   text-align: center; /* Center text alignment */
   padding: 1rem 0; /* Padding for top and bottom */
@@ -159,25 +172,22 @@ footer a:hover {
 #t {
   height: 450px; /* Fixed height */
   text-align: center; /* Center text alignment */
-  margin-top: 20px; /* Margin at the top */
-  margin-left: 30px; /* Margin on the left */
-  margin-right: 20px; /* Margin on the right */
-  margin-bottom: 20px; /* Margin at the bottom */
+  margin: 20px; /* Margin around the element */
   border-radius: 10px; /* Rounded corners */
-  border-color: #0066cc; /* Border color */
-  border-width: 2px; /* Border width */
-  border-style: solid; /* Solid border style */
-  background-color: #0066cc; /* Bright blue background */
+  border: 2px solid #4a90e2; /* Space-themed blue border */
+  background-color: #4a90e2; /* Space-themed blue background */
   color: #ffffff; /* White text color */
-  font-family: Arial, sans-serif; /* Font family */
+  font-family: 'Arial', sans-serif; /* Font family */
   font-size: 16px; /* Font size */
   font-weight: bold; /* Bold text */
   padding: 10px; /* Padding inside the link */
   text-decoration: none; /* Remove underline from links */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
 }
 
 #t:hover {
-  background-color: #004080; /* Darker blue background on hover */
+  background-color: #003d80; /* Darker blue background on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
 }
 
 /* Animations */
@@ -200,3 +210,4 @@ footer a:hover {
     opacity: 1; /* End with fully visible */
   }
 }
+
