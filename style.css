@@ -1,0 +1,199 @@
+/* General styles */
+
+/* Profile image styling */
+#profile-img {
+  border-radius: 50%; /* Circular profile image */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: block; /* Center the image horizontally */
+  margin: 1rem auto; /* Center the image with margin */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
+}
+
+/* Styling for the about me section */
+#about-me {
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  text-align: center; /* Center text alignment */
+}
+
+/* Styling for the skills section */
+#skills {
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  text-align: align; /* Note: `align` is not a valid value; it should be `left`, `center`, or `right` */
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif; /* Font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  line-height: 1.6; /* Line height for readability */
+  color: #333; /* Text color */
+  background-color: #f0f4f8; /* Light blue-gray background */
+}
+
+/* Container styling */
+.container {
+  width: 80%; /* Container width */
+  height: min-content; /* Container height based on content */
+  margin: auto; /* Center container horizontally */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Header styling */
+header {
+  background: #013870; /* Dark blue background */
+  color: #fff; /* White text color */
+  padding: 2rem 0; /* Padding for top and bottom */
+  text-align: center; /* Center text alignment */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5rem; /* Font size for the main heading */
+  animation: slideIn 1s ease-out; /* Slide-in effect */
+}
+
+header p {
+  font-size: 1.2rem; /* Font size for paragraph */
+  animation: slideIn 1.5s ease-out; /* Slide-in effect with delay */
+}
+
+/* Button styling */
+.btn {
+  background: #0066cc; /* Bright blue background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding inside the button */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s ease; /* Smooth background transition on hover */
+}
+
+.btn:hover {
+  background: #004080; /* Darker blue background on hover */
+}
+
+/* Section styling */
+section {
+  padding: 2rem 0; /* Padding for top and bottom */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+section h2 {
+  margin-top: 50px; /* Margin at the top of headings */
+  margin-bottom: 1rem; /* Margin at the bottom of headings */
+  text-align: center; /* Center text alignment */
+  color: #003366; /* Dark blue color for headings */
+  animation: slideIn 1s ease-out; /* Slide-in effect */
+}
+
+/* Profile image class (duplicate of #profile-img) */
+.profile-img {
+  border-radius: 50%; /* Circular profile image */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: block; /* Center the image horizontally */
+  margin: 1rem auto; /* Center the image with margin */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
+}
+
+/* Portfolio item styling */
+.portfolio-item {
+  margin-bottom: 2rem; /* Margin at the bottom of portfolio items */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+  margin: 80px; /* Margin around portfolio items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow transitions */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.portfolio-item img {
+  width: 100%; /* Full width of the portfolio item */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 2s ease-in-out 0.5s forwards; /* Fade-in effect with delay */
+}
+
+.portfolio-item h3 {
+  margin: 0.5rem 0; /* Margin around the title */
+  text-align: center; /* Center text alignment */
+  color: #0066cc; /* Bright blue color for titles */
+}
+
+.portfolio-item p {
+  padding: 0 1rem; /* Padding inside the paragraph */
+  text-align: center; /* Center text alignment */
+}
+
+/* Footer styling */
+footer {
+  background: #003366; /* Dark blue background */
+  color: #fff; /* White text color */
+  text-align: center; /* Center text alignment */
+  padding: 1rem 0; /* Padding for top and bottom */
+}
+
+footer a {
+  color: #66ccff; /* Light blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+footer a:hover {
+  color: #ffffff; /* White color on hover */
+}
+
+/* Button link styling */
+#t {
+  height: 450px; /* Fixed height */
+  text-align: center; /* Center text alignment */
+  margin-top: 20px; /* Margin at the top */
+  margin-left: 30px; /* Margin on the left */
+  margin-right: 20px; /* Margin on the right */
+  margin-bottom: 20px; /* Margin at the bottom */
+  border-radius: 10px; /* Rounded corners */
+  border-color: #0066cc; /* Border color */
+  border-width: 2px; /* Border width */
+  border-style: solid; /* Solid border style */
+  background-color: #0066cc; /* Bright blue background */
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 10px; /* Padding inside the link */
+  text-decoration: none; /* Remove underline from links */
+}
+
+#t:hover {
+  background-color: #004080; /* Darker blue background on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with invisible */
+  }
+  to {
+    opacity: 1; /* End with fully visible */
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px); /* Start from above */
+    opacity: 0; /* Start with invisible */
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* End with fully visible */
+  }
+}
