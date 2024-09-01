@@ -136,7 +136,10 @@ section h2 {
 
 /* Footer styling */
 footer {
-  background: #003366; /* Dark blue background */
+    background-image: url('./My-portfolio-front.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
   color: #fff; /* White text color */
   text-align: center; /* Center text alignment */
   padding: 1rem 0; /* Padding for top and bottom */
