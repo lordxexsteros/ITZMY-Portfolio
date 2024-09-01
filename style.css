@@ -43,7 +43,7 @@ body {
 
 /* Header styling */
 header {
-  background-image: url("https://github.com/lordxexsteros/ITZMY-portfolio/blob/main/My-portfolio-front.jpg");
+  background-image: url('https://github.com/lordxexsteros/ITZMY-portfolio/blob/main/My-portfolio-front.jpg?raw=true');
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
   text-align: center; /* Center text alignment */
