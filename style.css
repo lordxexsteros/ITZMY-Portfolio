@@ -9,7 +9,7 @@ body {
   font-family: 'Arial', sans-serif; /* Font family */
   line-height: 1.6; /* Line height for readability */
   color: #f0f4f8; /* Light color for readability on dark background */
-  background: url('./space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
+  background: url('./images/space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
   background-size: cover; /* Cover the whole background */
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* Header styling */
 header {
-  background: rgba(0, 0, 0, 0.7) url('./space-header.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./images/space-header.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
   color: #fff; /* White text color */
   padding: 2rem 0; /* Padding for top and bottom */
@@ -72,7 +72,7 @@ header p {
 }
 
 /* Button styling */
-.btn {
+.btn, #t {
   background: #4a90e2; /* Space-themed blue background */
   color: #fff; /* White text color */
   padding: 10px 20px; /* Padding inside the button */
@@ -80,9 +80,11 @@ header p {
   border-radius: 5px; /* Rounded corners */
   transition: background 0.3s ease; /* Smooth background transition on hover */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+  display: inline-block; /* Inline-block to make the button fit its content */
+  margin-top: 10px; /* Margin to separate from other content */
 }
 
-.btn:hover {
+.btn:hover, #t:hover {
   background: #003d80; /* Darker blue background on hover */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
 }
@@ -141,7 +143,7 @@ section h2 {
 
 /* Footer styling */
 footer {
-  background: rgba(0, 0, 0, 0.7) url('./space-footer.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./images/space-footer.jpg') no-repeat center center; /* Space-themed background image */
   background-size: cover;
   color: #fff; /* White text color */
   text-align: center; /* Center text alignment */
@@ -158,23 +160,51 @@ footer a:hover {
   color: #ffffff; /* White color on hover */
 }
 
-/* Button link styling */
-#t {
-  display: inline-block; /* Ensure the link is inline-block */
-  background-color: #4a90e2; /* Space-themed blue background */
-  color: #fff; /* White text color */
-  padding: 10px 20px; /* Padding inside the link */
-  text-decoration: none; /* Remove underline from the link */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background and box-shadow transition on hover */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Bold text */
+/* Carousel Container Styling */
+#carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust according to your preference */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Rounded corners */
 }
 
-#t:hover {
-  background-color: #003d80; /* Darker blue background on hover */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
+/* Carousel Slide Styling */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust according to your preference */
+}
+
+.carousel-slide {
+  display: flex;
+  width: 300%; /* 100% per slide for 3 slides */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 1;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Automatic Animation */
+.carousel-slide {
+  animation: slide 12s infinite;
 }
 
 /* Animations */
