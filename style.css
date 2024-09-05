@@ -180,7 +180,28 @@ footer a:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
 }
 
-/* Animations */
+/* Wallpaper Carousel */
+.carousel-container {
+  position: relative; /* Container positioning */
+  overflow: hidden; /* Hide overflow */
+  height: 300px; /* Fixed height for carousel */
+}
+
+.carousel-wrapper {
+  display: flex; /* Horizontal layout for slides */
+  transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+}
+
+.carousel-slide {
+  min-width: 100%; /* Full width for each slide */
+  transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+.carousel-slide img {
+  width: 100%; /* Full width of the slide */
+  height: auto; /* Maintain aspect ratio */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0; /* Start with invisible */
