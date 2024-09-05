@@ -24,37 +24,30 @@ header {
 }
 
 .carousel-container {
-    width: 100%;
-    height: auto; /* Adjust height based on image size */
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-slide {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 300%; /* Adjust based on the number of slides */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Set your preferred height */
 }
 
 .carousel-item {
-  margin-bottom: 2rem; /* Margin at the bottom of portfolio items */
-  border: 1px solid #333; /* Dark border */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Hide overflowing content */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow transitions */
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-  color: #f0f4f8; /* Light text color */
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-item img {
-  width: 100%; /* Full width of the portfolio item */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below the image */
-  opacity: 0; /* Initially hidden for animation */
-  animation: fadeIn 2s ease-in-out 0.5s forwards; /* Fade-in effect with delay */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Change to 'contain' if you prefer no cropping */
+    object-position: center;
 }
 
-}
 
 
 /* Keyframes for Carousel Animation */
