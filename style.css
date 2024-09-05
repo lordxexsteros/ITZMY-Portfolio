@@ -13,6 +13,73 @@ body {
   background-size: cover; /* Cover the whole background */
 }
 
+/* Header styling */
+header {
+  background: rgba(0, 0, 0, 0.7) url('./images/space-header.jpg') no-repeat center center; /* Space-themed background image */
+  background-size: cover;
+  color: #fff; /* White text color */
+  padding: 2rem 0; /* Padding for top and bottom */
+  text-align: center; /* Center text alignment */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Carousel Title */
+.carousel-title {
+  text-align: center; /* Center text alignment */
+  color: #4a90e2; /* Space-themed blue color */
+  font-size: 2rem; /* Font size for the title */
+  margin: 20px 0; /* Margin around the title */
+}
+
+/* Carousel Container Styling */
+#carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Adjust according to your preference */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Rounded corners */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background for carousel */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Glowing effect around the carousel */
+}
+
+/* Carousel Slide Styling */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust according to your preference */
+}
+
+.carousel-slide {
+  display: flex;
+  width: 300%; /* 100% per slide for 3 slides */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 1;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Automatic Animation */
+.carousel-slide {
+  animation: slide 12s infinite;
+}
+
 /* Container styling */
 .container {
   width: 80%; /* Container width */
@@ -48,27 +115,6 @@ body {
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
   text-align: left; /* Fixed alignment value */
   color: #ddd; /* Light gray text color */
-}
-
-/* Header styling */
-header {
-  background: rgba(0, 0, 0, 0.7) url('./images/space-header.jpg') no-repeat center center; /* Space-themed background image */
-  background-size: cover;
-  color: #fff; /* White text color */
-  padding: 2rem 0; /* Padding for top and bottom */
-  text-align: center; /* Center text alignment */
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-}
-
-header h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 3rem; /* Larger font size for the main heading */
-  animation: slideIn 1s ease-out; /* Slide-in effect */
-}
-
-header p {
-  font-size: 1.5rem; /* Larger font size for paragraph */
-  animation: slideIn 1.5s ease-out; /* Slide-in effect with delay */
 }
 
 /* Button styling */
@@ -158,53 +204,6 @@ footer a {
 
 footer a:hover {
   color: #ffffff; /* White color on hover */
-}
-
-/* Carousel Container Styling */
-#carousel {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Adjust according to your preference */
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px; /* Optional: Rounded corners */
-}
-
-/* Carousel Slide Styling */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Adjust according to your preference */
-}
-
-.carousel-slide {
-  display: flex;
-  width: 300%; /* 100% per slide for 3 slides */
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  flex: 1;
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-/* Keyframes for Carousel Animation */
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-
-/* Automatic Animation */
-.carousel-slide {
-  animation: slide 12s infinite;
 }
 
 /* Animations */
