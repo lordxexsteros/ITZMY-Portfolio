@@ -25,10 +25,10 @@ header {
 
 /* Carousel Container Styling */
 .carousel-container {
-  width: 100%;
-  height: 400px; /* Adjust as needed */
-  overflow: hidden; /* Hides any overflow */
-  position: relative;
+    width: 100%;
+    height: auto; /* Let the container adjust to the image height */
+    overflow: hidden;
+    position: relative;
 }
 
 /* Carousel Slide Styling */
@@ -38,23 +38,17 @@ header {
   transition: transform 0.5s ease-in-out;
 }
 
-/* Carousel Item Styling */
+
 .carousel-item {
-  flex: 1;
-  min-width: 100%;
-  box-sizing: border-box;
-  display: flex; /* Center image within item */
-  justify-content: center;
-  align-items: center;
-  background: black; /* Black background for bars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Carousel Image Styling */
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the entire image is visible */
-  display: block; /* Remove extra space below image */
+    width: 100%;
+    height: auto; /* Let the image keep its aspect ratio */
+    object-fit: contain;
 }
 
 
