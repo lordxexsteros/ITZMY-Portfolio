@@ -51,8 +51,8 @@ header {
 /* Carousel Image Styling */
 .carousel-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
 }
 
 /* Keyframes for Carousel Animation */
