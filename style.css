@@ -35,7 +35,6 @@ header {
 #carousel {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* Adjust according to your preference */
   margin: auto;
   overflow: hidden;
   border-radius: 10px; /* Optional: Rounded corners */
