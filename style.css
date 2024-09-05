@@ -24,25 +24,24 @@ header {
 }
 
 /* Carousel Container Styling */
+
 .carousel-container {
-    width: 100%;
-    height: auto; /* Let the container adjust to the image height */
-    overflow: hidden;
-    position: relative;
-}
-
-/* Carousel Slide Styling */
-.carousel-slide {
-  display: flex;
-  width: 300%; /* Adjust based on the number of slides */
-  transition: transform 0.5s ease-in-out;
-}
-
-
-.carousel-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Set a fixed height for consistency */
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover; /* This makes sure the image covers the container while maintaining the aspect ratio */
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-item img {
