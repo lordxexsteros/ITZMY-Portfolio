@@ -1,35 +1,37 @@
 /* Basic body styling */
 html, body {
-  height: 100%; /* Full height for HTML and body */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* Font family */
-  line-height: 1.6; /* Line height for readability */
-  color: #f0f4f8; /* Light color for readability on dark background */
-  background: url('./images/space-background.jpg') no-repeat center center fixed; /* Space-themed background image */
-  background-size: cover; /* Cover the whole background */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #f0f4f8;
+  background: url('./images/space-background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Header styling */
 header {
-  background: rgba(0, 0, 0, 0.7) url('./images/space-header.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./images/space-header.jpg') no-repeat center center;
   background-size: cover;
-  color: #fff; /* White text color */
-  padding: 2rem 0; /* Padding for top and bottom */
-  text-align: center; /* Center text alignment */
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
+
+/* Carousel Container Styling */
 .carousel-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 300px; /* Adjust height as needed */
-    max-width: 100%;
+    height: 300px; /* Adjust as needed */
 }
 
+/* Carousel Slide Styling */
 .carousel-slide {
     display: flex;
     width: calc(100% * 3); /* Adjust based on the number of images */
@@ -37,6 +39,7 @@ header {
     animation: slide 12s infinite;
 }
 
+/* Carousel Item Styling */
 .carousel-item {
     flex: 0 0 100%;
     height: 100%;
@@ -45,12 +48,21 @@ header {
     align-items: center;
 }
 
-
 /* Carousel Image Styling */
 .carousel-item img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the container */
+    height: 100%;
+    object-fit: cover; /* Ensure images cover container without stretching */
+    object-position: center; /* Center the image within its container */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Carousel Image Hover Effect */
+.carousel-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7); /* Brighter glowing shadow on hover */
 }
 
 /* Keyframes for Carousel Animation */
@@ -63,147 +75,147 @@ header {
 
 /* Container styling */
 .container {
-  width: 80%; /* Container width */
-  height: min-content; /* Container height based on content */
-  margin: auto; /* Center container horizontally */
-  overflow: hidden; /* Hide overflowing content */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
-  border-radius: 10px; /* Rounded corners */
-  padding: 1rem; /* Padding inside the container */
+  width: 80%;
+  height: min-content;
+  margin: auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 /* Profile image styling */
 #profile-img {
-  border-radius: 50%; /* Circular profile image */
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
-  display: block; /* Center the image horizontally */
-  margin: 1rem auto; /* Center the image with margin */
-  opacity: 0; /* Initially hidden for animation */
-  animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 1rem auto;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 /* Styling for the about me section */
 #about-me {
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-  text-align: center; /* Center text alignment */
-  color: #fff; /* White text color */
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  color: #fff;
 }
 
 /* Styling for the skills section */
 #skills {
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-  text-align: left; /* Fixed alignment value */
-  color: #ddd; /* Light gray text color */
+  animation: fadeIn 2s ease-in-out;
+  text-align: left;
+  color: #ddd;
 }
 
 /* Button styling */
 .btn, #t {
-  background: #4a90e2; /* Space-themed blue background */
-  color: #fff; /* White text color */
-  padding: 10px 20px; /* Padding inside the button */
-  text-decoration: none; /* Remove underline from links */
-  border-radius: 5px; /* Rounded corners */
-  transition: background 0.3s ease; /* Smooth background transition on hover */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
-  display: inline-block; /* Inline-block to make the button fit its content */
-  margin-top: 10px; /* Margin to separate from other content */
+  background: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .btn:hover, #t:hover {
-  background: #003d80; /* Darker blue background on hover */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
+  background: #003d80;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 /* Section styling */
 section {
-  padding: 2rem 0; /* Padding for top and bottom */
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
-  border-radius: 10px; /* Rounded corners */
+  padding: 2rem 0;
+  animation: fadeIn 2s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 /* Heading styling */
 section h2 {
-  margin-top: 50px; /* Margin at the top of headings */
-  margin-bottom: 1rem; /* Margin at the bottom of headings */
-  text-align: center; /* Center text alignment */
-  color: #e0e0e0; /* Light gray color for headings */
-  animation: slideIn 1s ease-out; /* Slide-in effect */
+  margin-top: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #e0e0e0;
+  animation: slideIn 1s ease-out;
 }
 
 /* Portfolio item styling */
 .portfolio-item {
-  margin-bottom: 2rem; /* Margin at the bottom of portfolio items */
-  border: 1px solid #333; /* Dark border */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Hide overflowing content */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow transitions */
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-  color: #f0f4f8; /* Light text color */
+  margin-bottom: 2rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f0f4f8;
 }
 
 .portfolio-item:hover {
-  transform: scale(1.05); /* Slightly enlarge the item on hover */
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Add glowing shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
 }
 
 .portfolio-item img {
-  width: 100%; /* Full width of the portfolio item */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below the image */
-  opacity: 0; /* Initially hidden for animation */
-  animation: fadeIn 2s ease-in-out 0.5s forwards; /* Fade-in effect with delay */
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .portfolio-item h3 {
-  margin: 0.5rem 0; /* Margin around the title */
-  text-align: center; /* Center text alignment */
-  color: #4a90e2; /* Space-themed blue color for titles */
+  margin: 0.5rem 0;
+  text-align: center;
+  color: #4a90e2;
 }
 
 .portfolio-item p {
-  padding: 0 1rem; /* Padding inside the paragraph */
-  text-align: center; /* Center text alignment */
+  padding: 0 1rem;
+  text-align: center;
 }
 
 /* Footer styling */
 footer {
-  background: rgba(0, 0, 0, 0.7) url('./images/space-footer.jpg') no-repeat center center; /* Space-themed background image */
+  background: rgba(0, 0, 0, 0.7) url('./images/space-footer.jpg') no-repeat center center;
   background-size: cover;
-  color: #fff; /* White text color */
-  text-align: center; /* Center text alignment */
-  padding: 1rem 0; /* Padding for top and bottom */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 footer a {
-  color: #66ccff; /* Light blue color for links */
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  color: #66ccff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #ffffff; /* White color on hover */
+  color: #ffffff;
 }
 
 /* Animations */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start with invisible */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* End with fully visible */
+    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   from {
-    transform: translateY(-20px); /* Start from above */
-    opacity: 0; /* Start with invisible */
+    transform: translateY(-20px);
+    opacity: 0;
   }
   to {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* End with fully visible */
+    transform: translateY(0);
+    opacity: 1;
   }
 }
