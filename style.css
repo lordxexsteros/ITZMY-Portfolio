@@ -160,19 +160,16 @@ footer a:hover {
 
 /* Button link styling */
 #t {
-  height: 450px; /* Fixed height */
-  text-align: center; /* Center text alignment */
-  margin: 20px; /* Margin around the element */
-  border-radius: 10px; /* Rounded corners */
-  border: 2px solid #4a90e2; /* Space-themed blue border */
+  display: inline-block; /* Ensure the link is inline-block */
   background-color: #4a90e2; /* Space-themed blue background */
-  color: #ffffff; /* White text color */
-  font-family: 'Arial', sans-serif; /* Font family */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding inside the link */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background and box-shadow transition on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
   font-size: 16px; /* Font size */
   font-weight: bold; /* Bold text */
-  padding: 10px; /* Padding inside the link */
-  text-decoration: none; /* Remove underline from links */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
 }
 
 #t:hover {
@@ -180,28 +177,7 @@ footer a:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glowing effect on hover */
 }
 
-/* Wallpaper Carousel */
-.carousel-container {
-  position: relative; /* Container positioning */
-  overflow: hidden; /* Hide overflow */
-  height: 300px; /* Fixed height for carousel */
-}
-
-.carousel-wrapper {
-  display: flex; /* Horizontal layout for slides */
-  transition: transform 0.5s ease-in-out; /* Smooth slide transition */
-}
-
-.carousel-slide {
-  min-width: 100%; /* Full width for each slide */
-  transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
-}
-
-.carousel-slide img {
-  width: 100%; /* Full width of the slide */
-  height: auto; /* Maintain aspect ratio */
-}
-
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0; /* Start with invisible */
