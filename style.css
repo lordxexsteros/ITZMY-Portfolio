@@ -23,47 +23,35 @@ header {
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
 }
 
-/* Carousel Title */
-.carousel-title {
-  text-align: center; /* Center text alignment */
-  color: #4a90e2; /* Space-themed blue color */
-  font-size: 2rem; /* Font size for the title */
-  margin: 20px 0; /* Margin around the title */
-}
-
 /* Carousel Container Styling */
-#carousel {
-  position: relative;
+.carousel-container {
   width: 100%;
-  margin: auto;
+  height: 400px; /* Adjust as needed */
   overflow: hidden;
-  border-radius: 10px; /* Optional: Rounded corners */
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background for carousel */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Glowing effect around the carousel */
+  position: relative;
 }
 
 /* Carousel Slide Styling */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Adjust according to your preference */
-}
-
 .carousel-slide {
   display: flex;
   width: 300%; /* 100% per slide for 3 slides */
   transition: transform 0.5s ease-in-out;
 }
 
+/* Carousel Item Styling */
 .carousel-item {
   flex: 1;
   min-width: 100%;
   box-sizing: border-box;
+  background-size: cover; /* Ensures the background image covers the item */
+  background-position: center; /* Centers the background image */
 }
 
+/* Carousel Image Styling */
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
 /* Keyframes for Carousel Animation */
